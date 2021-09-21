@@ -31,7 +31,7 @@ nav{
     list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-right: 20px;
     font-size: 18px;
@@ -39,10 +39,9 @@ nav ul li{
 }
 
 
-
 a{
     text-decoration: none;
-    color: #555;
+    color: rgb(0, 0, 0); 
 }
 
 p{
