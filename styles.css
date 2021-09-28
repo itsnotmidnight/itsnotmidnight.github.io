@@ -57,11 +57,18 @@ p{
 
 .btn{
     display: inline-block;
-    background: #141414;
-    color: #fff;
+    color: rgb(247, 247, 247);
+    background: rgb(31,31,31);
+    border: 1px solid rgb(31,31,31);
     padding: 8px 30px;
     margin: 30px 0;
     font-weight: 600;
+}
+
+.btn:hover{
+    background: rgb(247, 247, 247);
+    color: rgb(22, 22, 22);
+    transition: 0.25s;
 }
 
 .row{
