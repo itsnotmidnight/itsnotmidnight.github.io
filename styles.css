@@ -55,6 +55,12 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
     animation: transitionIn 1s;
+    color: rgb(31, 31, 31);
+}
+
+nav ul li a:hover{
+    color: #000000;
+    transition: .3s;
 }
 
 nav ul li a:after {
@@ -118,10 +124,13 @@ h1,h2{
     padding-right: 170px;
 }
 
-.two-columns{
-    flex-basis: 50%;
-    min-width: 300px;
+
+.info{
+    text-align: center;
+    padding-top: 200px;
+    font-size: large;
 }
+
 
 .two-columns h1{
     font-size: 50px;
@@ -138,7 +147,26 @@ h1,h2{
     color: #000000;
 }
 
-.two-columns-img{
-    max-width: 20%;
-    padding: 50px 0;
+
+.footer {
+    padding: 49px 0;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    animation: transitionIn 1s;
+    margin-top: 250px;
+}
+
+.footer .logo{
+    text-align: center;
+    padding-bottom: 25px;
+    flex: none;
+}
+
+.footer nav{
+    text-align: center;
+    animation: transitionIn 1.5s;
+}
+
+.footer .copyright{
+    padding-top: 10px;
 }
