@@ -67,7 +67,7 @@ nav ul li a:after {
     content: "";
     display: block;
     width: 0;
-    height: 1.1px;
+    height: 1px;
     background: rgb(0, 0, 0);
     transform-origin: right;
     transition: width .3s;
