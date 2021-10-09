@@ -50,6 +50,7 @@ nav ul li {
     font-size: 18px;
     font-weight: 600;
     color: rgb(255, 255, 255);
+    position: relative;
 }
 
 
@@ -70,13 +71,35 @@ nav ul li a:after {
     width: 0;
     height: 1px;
     background: rgb(0, 0, 0);
-    transform-origin: right;
     transition: width .3s;
 }
 
 nav ul li a:hover::after{
     width: 100%;
     transition: width .3s;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    text-align: left;
+}
+
+nav ul li:hover ul {
+    display: block;
+    animation: transitionIn .5s;
+}
+
+nav ul li ul li {
+    width: 180px;
+    border-radius: 3px;
+}
+
+nav ul li ul li a {
+    padding:  8px 14px;
+    text-align: left;
 }
 
 a{
@@ -91,6 +114,15 @@ p{
 
 h1,h2{
     animation: transitionIn 1.6s;
+    padding: 10px;
+}
+
+h2{
+    font-size: 27px;
+}
+
+img{
+    pointer-events: none;
 }
 
 .container{
@@ -98,6 +130,8 @@ h1,h2{
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
+    padding: 30px;
 }
 
 .btn{
@@ -148,6 +182,10 @@ h1,h2{
     color: #000000;
 }
 
+.email {
+    font-size: 9px;
+    padding: 8px;
+}
 
 .footer {
     padding: 49px 0;
@@ -155,6 +193,10 @@ h1,h2{
     text-align: center;
     animation: transitionIn 1s;
     margin-top: 250px;
+}
+
+.footer h1 {
+    padding: 0;
 }
 
 .footer .logo{
@@ -171,3 +213,23 @@ h1,h2{
 .footer .copyright{
     padding-top: 10px;
 }
+
+
+hr.solid {
+    border-top: 1px solid rgb(58, 58, 58);
+     width: 75%;
+     margin:0 auto;
+    animation: transitionIn 1.5s;
+
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery img{
+    height: 430px;
+    padding: 10px;
+    animation: transitionIn 1s;
+}
+
