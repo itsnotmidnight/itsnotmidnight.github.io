@@ -10,19 +10,6 @@
     }
 }
 
-@keyframes imageTransitionIn {
-    from {
-        transform: scaleY(0%);
-    }
-
-    to {
-        transform: scaleY(100%)
-    }
-}
-
-img{
-    animation: imageTransitionIn 1s;
-}
 
 *{
     margin: 0;
