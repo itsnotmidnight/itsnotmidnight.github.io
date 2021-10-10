@@ -10,6 +10,15 @@
     }
 }
 
+@keyframes imageTransitionIn {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 *{
     margin: 0;
@@ -116,9 +125,8 @@ h1,h2{
     animation: transitionIn 1.6s;
     padding: 10px;
 }
-
 h2{
-    font-size: 27px;
+    font-size: 25px;
 }
 
 img{
@@ -233,3 +241,18 @@ hr.solid {
     animation: transitionIn 1s;
 }
 
+video{
+    animation: transitionIn 1s;
+    padding: 30px;
+}
+
+img {
+    animation: transitionIn 1.7s;
+    padding: 30px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
