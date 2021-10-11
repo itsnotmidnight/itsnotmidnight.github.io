@@ -116,6 +116,26 @@ img{
     pointer-events: none;
 }
 
+.Scripting {
+    flex-basis:20%;
+    order:1;
+}
+
+.Modeling {
+    flex-basis:20%;
+    order:2;
+}
+
+.Building {
+    flex-basis:20%;
+    order:3;
+}
+
+.Graphic-Design {
+    flex-basis:20%;
+    order:4;
+}
+
 .container{
     max-width: 1800px;
     margin: auto;
@@ -254,4 +274,40 @@ img {
     transform: translateY(0px);
     opacity: 1;
     transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+       width: 100%;
+    }
+
+    .Scripting .Modeling .Building .Graphic-Design {
+        width: 100%;
+    }
+    .prices {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul{
+        position: absolute;
+        top: 130px;
+        left: 0;
+        background: rgb(24, 24, 24);
+        width: 100%;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    nav ul a{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+        transition: overflow 0.2s;
+        font-size: 30px;
+    }
+
+  
 }
