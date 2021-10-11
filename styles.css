@@ -305,7 +305,7 @@ img {
         margin-top: 10px;
         margin-bottom: 10px;
         color: rgb(255, 255, 255);
-        transition: overflow 0.2s;
+        transition: 0.2s;
         font-size: 30px;
     }
 
