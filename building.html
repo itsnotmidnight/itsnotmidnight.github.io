@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@550&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container reveal">
         <div class="navbar">
             <div class="logo">
                 <h1>Midnight's Portfolio</h1>
@@ -29,16 +29,15 @@
                     </li>
                     <li><a href="">About Me</a></li>
                 </ul>
-            </nav>
-    </div>   
+            </nav> 
 </div>
 
-    <div class="container">
+    <div class="container reveal">
         <h1>Building</h1>
         <hr class="solid">
     </div>
 
-    <div class="container">
+    <div class="container reveal">
 
         <h2>Featured Work</h2>
         <div class="gallery">
@@ -59,7 +58,7 @@
 </body>
 
 <footer>
-    <div class="footer">
+    <div class="footer reveal">
         <div class="logo">
             <h1>Midnight</h1>
         </div>
@@ -78,5 +77,28 @@
             
     </div>
 </footer>
+
+<script>    
+
+    window.addEventListener('load', reveal)
+
+    document.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var revealAreas = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < revealAreas.length; i++){
+            var windowHeight = window.innerHeight;
+            var sectionTop = revealAreas[i].getBoundingClientRect().top;
+            var revealPoint = 10;
+
+            if(sectionTop < windowHeight - revealPoint){
+                revealAreas[i].classList.add('active');
+            }
+
+        }
+    };
+
+</script>
 
 </html>

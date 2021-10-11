@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@550&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container">
+   
+    <div class="container reveal">
         <div class="navbar">
             <div class="logo">
                 <h1>Midnight's Portfolio</h1>
@@ -32,7 +32,7 @@
                 </ul>
             </nav>
         </div>
-            <div class="info">
+            <div class="info reveal">
                 <h1>Midnight</h1>
                 <h2>Game Developer and Scripter</h2>
                 <p> <br> Hi, I'm Midnight! Thank you for visiting my portfolio. I'm an aspiring<br> 
@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="dark-container reveal">
         <h1>Prices</h1>
         <p>I only accept Robux as payment</p>
         <div class="prices">
@@ -58,11 +58,11 @@
             </div>
             <div class="Modeling">
                 <h2>Modeling</h2>
-                <p>My prices vary for scripting based on the complexity of the project.</p>
+                <p>Assets will be a few hundred robux, full maps <br> will range around 10k - 30k</p>
             </div>
             <div class="Building">
                 <h2>Building</h2>
-                <p>My prices vary for scripting based on the complexity of the project.</p>
+                <p>Prices are negotiable.</p>
             </div>
             <div class="Graphic Design">
                 <h2>Graphic Design</h2>
@@ -73,7 +73,26 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="container reveal">
+        <h1>Availability</h1>
+        <p>
+            I'm only available 2 hours a day between Monday through Friday. On the weekends, I'm available for 5+ hours. <br> <br>
+        </p>
+    </div>
+
+    <div class="dark-container reveal">
+        <h1>Terms of Service</h1>
+        <div class="tos">
+            <p>1. For GFX I would prefer you pay first, but you can do 50% before, 50% after <br>
+               2. I have the right to cancel any orders <br>
+               3. I don't give refunds if you cancel the order, only if I cancel it for personal reasons. <br>
+               4. 
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="footer reveal">
             <div class="logo">
                 <h1>Midnight</h1>
             </div>
@@ -95,5 +114,27 @@
 
 </body>
 
+    <script>    
+
+        window.addEventListener('load', reveal)
+
+        document.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var revealAreas = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < revealAreas.length; i++){
+                var windowHeight = window.innerHeight;
+                var sectionTop = revealAreas[i].getBoundingClientRect().top;
+                var revealPoint = 10;
+
+                if(sectionTop < windowHeight - revealPoint){
+                    revealAreas[i].classList.add('active');
+                }
+
+            }
+        };
+
+    </script>
 
 </html>

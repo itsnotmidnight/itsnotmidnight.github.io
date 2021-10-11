@@ -1,24 +1,10 @@
 @keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@keyframes imageTransitionIn {
-    from{
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 *{
     margin: 0;
@@ -65,7 +51,6 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
-    animation: transitionIn 1s;
     color: rgb(31, 31, 31);
 }
 
@@ -94,11 +79,11 @@ nav ul li ul {
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
     text-align: left;
+    z-index: 999999;
 }
 
 nav ul li:hover ul {
     display: block;
-    animation: transitionIn .5s;
 }
 
 nav ul li ul li {
@@ -118,11 +103,9 @@ a{
 
 p{
     color: #555;
-    animation: transitionIn 1s;
 }
 
 h1,h2{
-    animation: transitionIn 1.6s;
     padding: 10px;
 }
 h2{
@@ -140,6 +123,16 @@ img{
     padding-right: 15px;
     text-align: center;
     padding: 30px;
+}
+
+.dark-container {
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    padding: 30px;
+   
 }
 
 .btn{
@@ -199,7 +192,6 @@ img{
     padding: 49px 0;
     background-color: rgb(247, 247, 247);
     text-align: center;
-    animation: transitionIn 1s;
     margin-top: 250px;
 }
 
@@ -215,7 +207,6 @@ img{
 
 .footer nav{
     text-align: center;
-    animation: transitionIn 1.5s;
 }
 
 .footer .copyright{
@@ -227,7 +218,6 @@ hr.solid {
     border-top: 1px solid rgb(58, 58, 58);
      width: 75%;
      margin:0 auto;
-    animation: transitionIn 1.5s;
 
 }
 
@@ -238,16 +228,13 @@ hr.solid {
 .gallery img{
     height: 430px;
     padding: 10px;
-    animation: transitionIn 1s;
 }
 
 video{
-    animation: transitionIn 1s;
     padding: 30px;
 }
 
 img {
-    animation: transitionIn 1.7s;
     padding: 30px;
 }
 
@@ -255,4 +242,16 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 1s;
 }
